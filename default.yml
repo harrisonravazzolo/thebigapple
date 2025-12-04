@@ -12,7 +12,7 @@ agent_options:
 controls: # This cannot be set here and in no-team.yml
 org_settings:
   webhook_settings:
-    activties_webhook:
+    activities_webhook:
       enable_activities_webhook: true
       destination_url: https://webhook.site/71561a20-3b97-4719-8349-04c69d247826
   fleet_desktop:
