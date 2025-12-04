@@ -1,0 +1,7 @@
+- name: Privileges is installed and running version 2.4.2 or later
+  description: Checks that Privileges is installed and running version 2.4.2.
+  query: "SELECT 1 WHERE EXISTS (SELECT 1 FROM apps a1 WHERE a1.bundle_identifier = 'corp.sap.privileges' AND a1.bundle_short_version>='2.4.2') OR NOT EXISTS (SELECT 1 FROM apps a2 WHERE a2.bundle_identifier = 'corp.sap.privileges');
+  platform: darwin
+  critical: true
+  calendar_events_enabled: false
+  conditional_access_enabled: false
