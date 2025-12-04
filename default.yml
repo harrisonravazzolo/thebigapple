@@ -11,6 +11,10 @@ agent_options:
   path: ./lib/agent-options.yml
 controls: # This cannot be set here and in no-team.yml
 org_settings:
+  webhook_settings:
+    activties_webhook:
+      enable_activities_webhook: true
+      destination_url: https://webhook.site/71561a20-3b97-4719-8349-04c69d247826
   fleet_desktop:
     transparency_url: https://apple.com
   host_expiry_settings:
@@ -19,7 +23,7 @@ org_settings:
   server_settings:
     server_url: $FLEET_URL
   org_info:
-    org_name: Fleet
+    org_name: The Big Apple
   secrets:
     - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
   features:
